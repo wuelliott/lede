@@ -107,10 +107,10 @@ jobs:
           #
           cat >> .config <<EOF
           # CONFIG_PACKAGE_luci-theme-netgear=y # 网件主题
-          # CONFIG_PACKAGE_luci-theme-opentomcat=y # opentomcat主题
+          CONFIG_PACKAGE_luci-theme-opentomcat=y # opentomcat主题
           CONFIG_PACKAGE_luci-theme-argon=y # 第三方argon主题
           CONFIG_PACKAGE_luci-app-argon-config=y # 第三方argon主题配置功能
-          # CONFIG_PACKAGE_luci-theme-edge=y # edge主题
+          CONFIG_PACKAGE_luci-theme-edge=y # edge主题
           EOF
 
           #
@@ -138,8 +138,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-accesscontrol=y # 访问时间控制
           # CONFIG_PACKAGE_luci-app-airplay2=y
           CONFIG_PACKAGE_htop=y # 交互进程浏览器
-          CONFIG_PACKAGE_netdata=y # 实时性能监控工具
-          CONFIG_PACKAGE_luci-app-netdata=y # 实时性能监控
+          # CONFIG_PACKAGE_netdata=y # 实时性能监控工具
+          # CONFIG_PACKAGE_luci-app-netdata=y # 实时性能监控
           CONFIG_PACKAGE_luci-app-nlbwmon=y # 网络带宽监视器
           CONFIG_PACKAGE_luci-app-jd-dailybonus=y # 京东每日签到
           # CONFIG_PACKAGE_luci-app-ps3netsrv=y # PS3网盘服务
