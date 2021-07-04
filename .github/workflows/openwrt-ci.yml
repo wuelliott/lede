@@ -49,7 +49,6 @@ jobs:
 
       - name: 增加第三方源码
         run: |
-          sed -i 's/luci-theme-bootstrap/luci-theme-opentomcat/g' ./feeds/luci/collections/luci/Makefile
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
@@ -68,6 +67,7 @@ jobs:
         run: |
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+          sed -i 's/luci-theme-bootstrap/luci-theme-opentomcat/g' ./feeds/luci/collections/luci/Makefile
 
       - name: Generate configuration file
         run: |
