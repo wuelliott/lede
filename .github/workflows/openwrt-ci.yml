@@ -67,6 +67,8 @@ jobs:
         run: |
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+          sed -i 's/R21.7.1.100/R21.7.1.100 compiled by wuelliott/g' ./package/lean/default-settings/files/zzz-default-settings
+          sed -i 's/192.168.1.1/192.168.188.1/g' ./package/base-files/files/bin/config_generate
           sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
           # sed -i 's/luci-theme-bootstrap/luci-theme-opentomcat/g' ./feeds/luci/collections/luci/Makefile
           # sed -i 's/luci-theme-bootstrap/luci-theme-netgear/g' ./feeds/luci/collections/luci/Makefile
@@ -131,6 +133,8 @@ jobs:
           CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y # ipv6 DHCP服务
           CONFIG_PACKAGE_ipv6helper=y # ipv6助手
           CONFIG_PACKAGE_kmod-ip6tables=y # ipv6防火墙
+          CONFIG_PACKAGE_ip6tables-extra=y # ipv6防火墙
+          CONFIG_PACKAGE_ip6tables-mod-nat=y # ipv6防火墙
           CONFIG_PACKAGE_luci-proto-relay=y # 中继桥
           # CONFIG_PACKAGE_luci-app-ddns=y # 动态DDNS域名
           CONFIG_PACKAGE_luci-app-zerotier=y # ZeroTire虚拟内网
