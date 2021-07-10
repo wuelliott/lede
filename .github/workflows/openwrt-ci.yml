@@ -139,6 +139,7 @@ jobs:
           CONFIG_PACKAGE_luci-proto-relay=y # 中继桥(ALL)
           CONFIG_PACKAGE_luci-app-ddns=y # 动态DDNS域名
           CONFIG_PACKAGE_luci-app-zerotier=y # ZeroTire虚拟内网(ALL)
+          CONFIG_PACKAGE_luci-app-vsftpd=n # 关闭FTP服务(AX6)
           # CONFIG_PACKAGE_openssh-sftp-server=y # SSH服务
           # CONFIG_PACKAGE_nano=y # Nano文本编辑器(ALL)
           CONFIG_PACKAGE_iperf3=m # 网络测速
@@ -170,22 +171,22 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y # SS代理(ALL)
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust=n # SS代理 Rust(ALL)
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y # Xray代理(ALL)
-          CONFIG_PACKAGE_luci-app-passwall=m # 帕斯沃
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=m # SS代理
+          CONFIG_PACKAGE_luci-app-passwall=y # 帕斯沃
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=y # SS代理
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Server=n # SS服务端
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR=m # SSR代理
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR=y # SSR代理
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server=n # SSR服务端
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=m # Xray代理
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=m # Trojan代理
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y # Xray代理
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y # Trojan代理
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO=m # Trojan代理
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=m # Brook代理
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy=m # NaiveProxy代理
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=m # kcptun代理
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_haproxy=m # HAProxy负载均衡
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_haproxy=y # HAProxy负载均衡
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG=m # 防污染DNS服务
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_dns2socks=m # DNS服务器
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_dns2socks=y # DNS服务器
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=m # SS V2ray插件
-          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=m # 简单混淆工具
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y # 简单混淆工具
           CONFIG_PACKAGE_luci-app-openclash=m # Clash代理
           
           EOF
