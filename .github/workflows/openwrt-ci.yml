@@ -125,7 +125,7 @@ jobs:
           # 安装软件
           #
           cat >> .config <<EOF
-          CONFIG_PACKAGE_curl=y # curl下载工具(R3G)
+          CONFIG_PACKAGE_curl=m # curl下载工具(R3G)
           CONFIG_PACKAGE_automount=y # 自动挂载U盘(R3G)
           CONFIG_PACKAGE_autosamba=y # SMB服务(R3G)
           CONFIG_PACKAGE_luci-app-diskman=y # 磁盘管理工具(R3G)
@@ -141,16 +141,16 @@ jobs:
           CONFIG_PACKAGE_luci-app-zerotier=y # ZeroTire虚拟内网(ALL)
           # CONFIG_PACKAGE_luci-app-vsftpd=n # 关闭FTP服务(AX6)
           # CONFIG_PACKAGE_openssh-sftp-server=y # SSH服务
-          CONFIG_PACKAGE_nano=y # Nano文本编辑器(ALL)
-          CONFIG_PACKAGE_iperf3=y # 网络测速
-          CONFIG_PACKAGE_lm-sensors=y # 温度检测
-          CONFIG_PACKAGE_lm-sensors-detect=y # 温度检测
-          CONFIG_PACKAGE_luci-app-ttyd=y # 网页终端模拟器
+          CONFIG_PACKAGE_nano=m # Nano文本编辑器(ALL)
+          CONFIG_PACKAGE_iperf3=m # 网络测速
+          CONFIG_PACKAGE_lm-sensors=m # 温度检测
+          CONFIG_PACKAGE_lm-sensors-detect=m # 温度检测
+          CONFIG_PACKAGE_luci-app-ttyd=m # 网页终端模拟器
           CONFIG_PACKAGE_luci-app-adbyby-plus=y # 广告屏蔽
           CONFIG_PACKAGE_luci-app-adguardhome=y # 广告拦截(ALL)
-          CONFIG_PACKAGE_luci-app-unblockmusic=y # 不安装解锁网易云灰音乐(ALL)
-          CONFIG_UnblockNeteaseMusic_Go=y
-          CONFIG_UnblockNeteaseMusic_NodeJS=y
+          CONFIG_PACKAGE_luci-app-unblockmusic=m # 不安装解锁网易云灰音乐(ALL)
+          CONFIG_UnblockNeteaseMusic_Go=m
+          CONFIG_UnblockNeteaseMusic_NodeJS=m
           # CONFIG_PACKAGE_luci-app-uugamebooster=n # UU游戏加速器
           # CONFIG_PACKAGE_luci-app-xlnetacc=n # 迅雷快鸟
           CONFIG_PACKAGE_luci-app-accesscontrol=n # 访问时间控制(ALL)
