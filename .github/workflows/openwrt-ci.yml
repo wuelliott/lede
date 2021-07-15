@@ -105,7 +105,7 @@ jobs:
           # CONFIG_TARGET_ramips_mt7620_DEVICE_glinet_gl-mt300n=y # GL-MT300N
           # CONFIG_TARGET_ramips_mt7620_DEVICE_xiaomi_miwifi-r3=y # Xiaome R3
           CONFIG_TARGET_ramips_mt7621=y # Xiaome R3G
-          CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mir3g=y # Xiaome R3G
+          CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mi-router-3g=y # Xiaome R3G
           # CONFIG_TARGET_ramips_mt76x8=y # GL-MT300Nv2
           # CONFIG_TARGET_ramips_mt76x8_DEVICE_glinet_gl-mt300n-v2=y # GL-MT300Nv2
           EOF
@@ -125,7 +125,7 @@ jobs:
           # 安装软件
           #
           cat >> .config <<EOF
-          CONFIG_PACKAGE_curl=m # curl下载工具(R3G)
+          CONFIG_PACKAGE_curl=y # curl下载工具(R3G)
           CONFIG_PACKAGE_automount=y # 自动挂载U盘(R3G)
           CONFIG_PACKAGE_autosamba=y # SMB服务(R3G)
           CONFIG_PACKAGE_luci-app-diskman=y # 磁盘管理工具(R3G)
@@ -141,27 +141,27 @@ jobs:
           CONFIG_PACKAGE_luci-app-zerotier=y # ZeroTire虚拟内网(ALL)
           # CONFIG_PACKAGE_luci-app-vsftpd=n # 关闭FTP服务(AX6)
           # CONFIG_PACKAGE_openssh-sftp-server=y # SSH服务
-          CONFIG_PACKAGE_nano=m # Nano文本编辑器(ALL)
-          CONFIG_PACKAGE_iperf3=m # 网络测速
-          CONFIG_PACKAGE_lm-sensors=m # 温度检测
-          CONFIG_PACKAGE_lm-sensors-detect=m # 温度检测
-          CONFIG_PACKAGE_luci-app-ttyd=m # 网页终端模拟器
-          CONFIG_PACKAGE_luci-app-adbyby-plus=m # 广告屏蔽
-          CONFIG_PACKAGE_luci-app-adguardhome=m # 广告拦截(ALL)
-          CONFIG_PACKAGE_luci-app-unblockmusic=m # 不安装解锁网易云灰音乐(ALL)
-          CONFIG_UnblockNeteaseMusic_Go=m
-          CONFIG_UnblockNeteaseMusic_NodeJS=m
+          CONFIG_PACKAGE_nano=y # Nano文本编辑器(ALL)
+          CONFIG_PACKAGE_iperf3=y # 网络测速
+          CONFIG_PACKAGE_lm-sensors=y # 温度检测
+          CONFIG_PACKAGE_lm-sensors-detect=y # 温度检测
+          CONFIG_PACKAGE_luci-app-ttyd=y # 网页终端模拟器
+          CONFIG_PACKAGE_luci-app-adbyby-plus=y # 广告屏蔽
+          CONFIG_PACKAGE_luci-app-adguardhome=y # 广告拦截(ALL)
+          CONFIG_PACKAGE_luci-app-unblockmusic=y # 不安装解锁网易云灰音乐(ALL)
+          CONFIG_UnblockNeteaseMusic_Go=y
+          CONFIG_UnblockNeteaseMusic_NodeJS=y
           # CONFIG_PACKAGE_luci-app-uugamebooster=n # UU游戏加速器
           # CONFIG_PACKAGE_luci-app-xlnetacc=n # 迅雷快鸟
           CONFIG_PACKAGE_luci-app-accesscontrol=n # 访问时间控制(ALL)
-          CONFIG_PACKAGE_luci-app-airplay2=m
+          CONFIG_PACKAGE_luci-app-airplay2=y
           CONFIG_PACKAGE_htop=y # 交互进程浏览器(ALL)
           CONFIG_PACKAGE_netdata=m # 实时性能监控工具
           CONFIG_PACKAGE_luci-app-netdata=m # 实时性能监控
           CONFIG_PACKAGE_luci-app-nlbwmon=y # 网络带宽监视器(ALL)
           CONFIG_PACKAGE_luci-app-jd-dailybonus=y # 京东每日签到(ALL)
           CONFIG_PACKAGE_luci-app-ps3netsrv=y # PS3网盘服务(R3G)
-          # CONFIG_PACKAGE_luci-app-frpc=m # 内网穿透
+          CONFIG_PACKAGE_luci-app-frpc=y # 内网穿透
           # CONFIG_PACKAGE_luci-app-smartinfo=y # 硬盘信息
           # CONFIG_PACKAGE_luci-app-mwan3helper=y # 多线多拨助手
           CONFIG_PACKAGE_luci-app-transmission=y # BT、PT下载工具(R3G)
@@ -189,7 +189,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_dns2socks=y # DNS服务器
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=m # SS V2ray插件
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y # 简单混淆工具
-          CONFIG_PACKAGE_luci-app-openclash=m # Clash代理
+          CONFIG_PACKAGE_luci-app-openclash=y # Clash代理
           
           EOF
 
