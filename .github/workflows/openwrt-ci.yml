@@ -126,7 +126,7 @@ jobs:
           # 安装软件
           #
           cat >> .config <<EOF
-          # CONFIG_PACKAGE_curl=y # curl下载工具(R3G)
+          CONFIG_PACKAGE_curl=y # curl下载工具(R3G)
           # CONFIG_PACKAGE_automount=y # 自动挂载U盘(R3G)
           # CONFIG_PACKAGE_autosamba=y # SMB服务(R3G)
           # CONFIG_PACKAGE_luci-app-diskman=y # 磁盘管理工具(R3G)
